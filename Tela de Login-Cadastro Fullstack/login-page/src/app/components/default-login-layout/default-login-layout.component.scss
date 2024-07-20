@@ -36,6 +36,11 @@ main {
             font-weight: bold;
         }
 
+        span{
+            color: #C2C2C2;
+            font-size: 14px;
+        }
+
         button {
             width: 100%;
             border-radius: 8px;
@@ -44,6 +49,7 @@ main {
             border: none;
             background: transparent;
             padding: 12px 24px;
+            cursor: pointer;
             
             &.btn-primary {
                 background-color: $primary-color;

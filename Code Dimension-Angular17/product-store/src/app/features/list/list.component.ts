@@ -1,11 +1,13 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { ProductsService } from '../../shared/services/products.service';
+import { CardComponent } from './components/card/card.component';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [],
+  imports: [CardComponent, RouterModule],
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'
 })

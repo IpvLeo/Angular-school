@@ -1,8 +1,32 @@
 {
-    "products" : [
-        {
-            "id": "1",
-            "title": "Produto de Teste"
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "title": "Produto de Teste"
+    },
+    {
+      "id": "dc29",
+      "title": "Leonardo"
+    },
+    {
+      "id": "b781",
+      "title": "Leonardo"
+    },
+    {
+      "id": "39e5",
+      "title": "Leonardo"
+    },
+    {
+      "id": "796d",
+      "title": "Celular"
+    },
+    {
+      "id": "e643",
+      "title": "Casa"
+    },
+    {
+      "id": "e5aa",
+      "title": "almofada"
+    }
+  ]
 }

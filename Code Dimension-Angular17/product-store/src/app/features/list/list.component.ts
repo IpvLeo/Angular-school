@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ProductsService } from '../../shared/services/products.service';
 import { CardComponent } from './components/card/card.component';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 
 @Component({
@@ -16,6 +16,7 @@ export class ListComponent {
   products: any[] = [];
 
   productService = inject(ProductsService);
+  router = inject(Router);
 
   ngOnInit () {
     this.productService.getAll().subscribe((products) => {
@@ -24,4 +25,9 @@ export class ListComponent {
     });
   }
   
+  onEdit() {
+    this.router.navigateByUrl('/edit-product');
+  }
+
+
 }

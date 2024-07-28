@@ -28,4 +28,7 @@ export class ProductsService {
   }
 
 
+  delete(id: string) {
+    return this.httpClient.delete(`/api/products/${id}`);
+  }
 }

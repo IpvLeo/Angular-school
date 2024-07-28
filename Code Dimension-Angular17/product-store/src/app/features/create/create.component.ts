@@ -21,13 +21,13 @@ export class CreateComponent {
   router = inject(Router);
 
   form = new FormGroup({
-    title: new FormControl<string>('', { nonNullable: true, validators: Validators.required })
-})
+    title: new FormControl<string>('', { 
+      nonNullable: true,
+      validators: Validators.required 
+    }),
+  });
   
   onSubmit() {
-    
-  
-
 
     this.productsService.post({
       title: this.form.controls.title.value
